@@ -118,9 +118,9 @@ export const Footer = () => {
                 <QrCode className="w-3.5 h-3.5 text-gold flex-shrink-0" />
                 <span>UPI: <code className="font-mono text-gold font-bold">{RESTAURANT_INFO.upiId}</code></span>
               </p>
-              <p className="flex items-start space-x-2 pt-1 text-[11px] text-ivory/60">
+              <p className="flex items-start space-x-2 pt-1 text-[11px] text-ivory/70 leading-relaxed">
                 <MapPin className="w-3.5 h-3.5 text-gold flex-shrink-0 mt-0.5" />
-                <span>Rajasthan, India</span>
+                <span>3ML, Guru Gobind Singh Chowk, Sri Ganganagar, Rajasthan 335001</span>
               </p>
             </div>
           </div>

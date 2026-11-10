@@ -14,7 +14,7 @@ Founded in **1994** in Rajasthan, India, **Gahlot Vaishno Bhojnalaya** is dedica
 
 - **Official WhatsApp Hotline:** [+91 7231858636](https://wa.me/917231858636)
 - **Official Merchant UPI ID:** `gahlotvb@slc`
-- **Location:** Main Market Road, Near Royal Palace Circle, Rajasthan 342001, India
+- **Location:** 3ML, Guru Gobind Singh Chowk, Sri Ganganagar, Rajasthan 335001, India
 - **Timings:** 10:30 AM – 11:30 PM (Open 7 Days)
 
 ---

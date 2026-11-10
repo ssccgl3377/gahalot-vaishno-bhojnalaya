@@ -72,7 +72,7 @@ export const Hero = () => {
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-forest/5 border border-gold/40 text-forest text-xs">
               <span className="veg-badge"><span className="veg-badge-circle"></span></span>
               <span className="font-sans font-medium text-forest-900 text-[11px] sm:text-xs">
-                Estd. 1994 • Rajasthan • 100% Shuddh Cow Desi Ghee
+                Estd. 1994 • Sri Ganganagar, Rajasthan • 100% Shuddh Cow Desi Ghee
               </span>
             </div>
 

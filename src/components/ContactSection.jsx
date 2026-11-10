@@ -165,7 +165,7 @@ export const ContactSection = () => {
             <div className="relative z-10 p-6 text-left">
               <div className="inline-flex items-center space-x-2 bg-forest-900/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-gold/40 text-gold text-xs font-bold">
                 <Navigation className="w-3.5 h-3.5 text-gold" />
-                <span>Rajasthan, India</span>
+                <span>Sri Ganganagar, Rajasthan</span>
               </div>
             </div>
 
@@ -181,7 +181,7 @@ export const ContactSection = () => {
                   </span>
                 </div>
                 <p className="text-xs text-ivory/80 leading-relaxed font-sans">
-                  Conveniently situated along the main arterial corridor with dedicated valet parking and spacious bus parking for tour groups traveling across Rajasthan.
+                  Conveniently situated at 3ML, Guru Gobind Singh Chowk, Sri Ganganagar, with dedicated parking and a spacious pure vegetarian AC family dining hall.
                 </p>
                 <div className="pt-2 flex flex-wrap gap-2 text-[11px] text-gold">
                   <span>✓ Valet Parking Available</span>
