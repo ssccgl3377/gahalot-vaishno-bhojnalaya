@@ -541,7 +541,7 @@ export const CartDrawer = ({ onOpenUpiModal }) => {
                           </span>
                         </div>
                         <p className="text-[11px] text-charcoal/70 mt-0.5">
-                          Choose GPay, PhonePe, Paytm, CRED or scan QR code. Autofills amount on your app.
+                          Pay via UPI ID (gahlotvb@slc), Mobile Number (7231858636), or instant app buttons.
                         </p>
                       </div>
                     </label>

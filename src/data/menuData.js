@@ -6,6 +6,8 @@ export const RESTAURANT_INFO = {
   whatsapp: "917231858636",
   formattedWhatsApp: "+91 7231858636",
   upiId: "gahlotvb@slc",
+  upiMobile: "7231858636",
+  upiMobileDisplay: "+91 7231858636",
   upiName: "Gahlot Vaishno Bhojnalaya",
   location: "Main Market Road, Near Royal Palace Circle, Rajasthan 342001, India",
   googleMapsQuery: "Gahlot+Vaishno+Bhojnalaya+Rajasthan+India",
