@@ -1,0 +1,176 @@
+/* ============================================================================
+   GAHLOT VAISHNO BHOJNALAYA — THE HALLMARK & SCROLL-CRAFT DESIGN FLOOR
+   ----------------------------------------------------------------------------
+   Brand: Gahlot Vaishno Bhojnalaya (Estd. 1994, Rajasthan, India)
+   Category: 100% Shuddh Pure Vegetarian Indian Restaurant
+   WhatsApp Ordering: +91 7231858636 | UPI: gahlotvb@slc
+   ========================================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hallmark & Scroll-Craft Color Tokens */
+  --gvb-forest-dark: #0D231C;
+  --gvb-forest: #173D32;
+  --gvb-forest-light: #215243;
+  --gvb-forest-surface: #122B23;
+  --gvb-cream: #F7F3EA;
+  --gvb-cream-dark: #EDE5D5;
+  --gvb-ivory: #FFF9EF;
+  --gvb-gold: #C49A52;
+  --gvb-gold-light: #DFC085;
+  --gvb-gold-dark: #9E7835;
+  --gvb-gold-pale: #F8F1E2;
+  --gvb-sage: #A6B49B;
+  --gvb-charcoal: #252824;
+  --gvb-charcoal-soft: #555A53;
+  --gvb-veg-green: #16A34A;
+  --gvb-hairline: rgba(196, 154, 82, 0.22);
+  --gvb-hairline-strong: rgba(196, 154, 82, 0.45);
+
+  /* Elevation Shadows */
+  --gvb-shadow-soft: 0 4px 20px -2px rgba(23, 61, 50, 0.08);
+  --gvb-shadow-royal: 0 12px 36px -8px rgba(13, 35, 28, 0.25);
+  --gvb-shadow-gold: 0 8px 30px -4px rgba(196, 154, 82, 0.28);
+
+  /* Easing curves */
+  --gvb-ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --gvb-ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@layer base {
+  /* Hallmark Floor 4: overflow-x: clip on html and body. Never hidden, never 100vw */
+  html, body {
+    overflow-x: clip;
+    background-color: var(--gvb-cream);
+    color: var(--gvb-charcoal);
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Focus visible accessibility */
+  :focus-visible {
+    outline: 2px solid var(--gvb-gold);
+    outline-offset: 2px;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: var(--gvb-gold);
+    color: var(--gvb-ivory);
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html, body {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Royal Heritage Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--gvb-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gvb-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gvb-forest);
+}
+
+/* Subtle Royal Jali & Palace Wall Textures */
+.bg-jali-pattern {
+  background-image: 
+    radial-gradient(var(--gvb-gold) 0.75px, transparent 0.75px), 
+    radial-gradient(var(--gvb-gold) 0.75px, var(--gvb-cream) 0.75px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.bg-jali-dark {
+  background-image: 
+    radial-gradient(rgba(196, 154, 82, 0.18) 1px, transparent 1px), 
+    radial-gradient(rgba(196, 154, 82, 0.18) 1px, var(--gvb-forest-dark) 1px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+/* Pure Veg Icon Badge standard styling */
+.veg-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid var(--gvb-veg-green);
+  border-radius: 3px;
+  padding: 2px;
+  background-color: #FFFFFF;
+}
+.veg-badge-circle {
+  width: 6.5px;
+  height: 6.5px;
+  border-radius: 50%;
+  background-color: var(--gvb-veg-green);
+}
+
+/* Shimmer Light Bar for Golden Accents */
+@keyframes shimmer-sweep {
+  0% { transform: translateX(-150%); }
+  100% { transform: translateX(150%); }
+}
+
+.animate-shimmer-sweep {
+  position: relative;
+  overflow: hidden;
+}
+.animate-shimmer-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 249, 239, 0.25), transparent);
+  transform: translateX(-150%);
+  animation: shimmer-sweep 4s infinite ease-in-out;
+}
+
+/* Gentle Floating Animation for Dimensional Planes */
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+/* Steam particle rising animation for hot foods */
+@keyframes steam-rise {
+  0% { opacity: 0; transform: translateY(0) scaleX(0.8); }
+  50% { opacity: 0.35; }
+  100% { opacity: 0; transform: translateY(-28px) scaleX(1.3); }
+}
+
+.steam-particle {
+  animation: steam-rise 2.5s infinite ease-out;
+}
+
+/* Container constraints according to Hallmark Rule 14 */
+.hallmark-container {
+  max-width: 82rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 4vw, 3.5rem);
+  padding-right: clamp(1.25rem, 4vw, 3.5rem);
+}
